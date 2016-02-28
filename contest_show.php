@@ -1,3 +1,6 @@
+<style>td h1{
+font-size:18px;
+}</style>
 <?php
 include_once("functions/contests.php");
 $cid = convert_str($_GET['cid']);

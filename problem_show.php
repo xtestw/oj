@@ -1,3 +1,8 @@
+<style>
+td h1{
+font-size:18px;
+}
+</style>
 <?php
 include_once('functions/problems.php');
 $pid = intval(convert_str($_GET['pid']));

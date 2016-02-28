@@ -664,7 +664,7 @@ function pcrawler_lightoj($pid){
         $ret["case_time_limit"] = $ret["time_limit"];
         if (preg_match('/Memory Limit: <span style="color: #B45F04;">(.*) MB/sU', $content, $matches)) $ret["memory_limit"] = intval(trim($matches[1])) * 1024;
         if (preg_match('/<div class=Section1>(.*)<h1>Input<\/h1>/sU', $content, $matches)) $ret["description"] = trim($matches[1]);
-        if (preg_match('/<h1>Input<\/h1>.*<p class=MsoNormal>(.*)<\/p>/sU', $content, $matches)) $ret["input"] = trim($matches[1]);
+        if (preg_match('/<h1>Input<\/h1>.*<p class=MsoNormal>(.*)<h1>/sU', $content, $matches)) $ret["input"] = trim($matches[1]);
         if (preg_match('/<h1>Output<\/h1>.*<p class=MsoNormal>(.*)<\/p>/sU', $content, $matches)) $ret["output"] = trim($matches[1]);
         if (preg_match('/<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0.*>.*<h1>Sample Input<\/h1>.*<\/table>/sU', $content, $matches)) $ret["sample_in"] = trim($matches[0]);
 //        if (preg_match('', $content, $matches)) $ret["sample_out"] = trim($matches[1]);
