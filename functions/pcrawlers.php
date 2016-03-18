@@ -549,7 +549,7 @@ function pcrawler_pku($pid){
         if (preg_match('/<p class="pst">Input<\/p><div class="ptx" lang="en-US">(.*)<\/div><p class="pst">Output<\/p>/sU', $content, $matches)) $ret["input"] = trim($matches[1]);
         if (preg_match('/<p class="pst">Output<\/p><div class="ptx" lang="en-US">(.*)<\/div><p class="pst">Sample Input<\/p>/sU', $content, $matches)) $ret["output"] = trim($matches[1]);
         if (preg_match('/<p class="pst">Sample Input<\/p><pre class="sio">(.*)<\/pre><p class="pst">Sample Output<\/p>/sU', $content, $matches)) $ret["sample_in"] = trim($matches[1]);
-        if (preg_match('/<p class="pst">Sample Output<\/p><pre class="sio">(.*)<\/pre><p class="pst">Source<\/p>/sU', $content, $matches)) $ret["sample_out"] = trim($matches[1]);
+        if (preg_match('/<p class="pst">Sample Output<\/p><pre class="sio">(.*)<\/pre>/sU', $content, $matches)) $ret["sample_out"] = trim($matches[1]);
         if (preg_match('/<p class="pst">Source<\/p><div class="ptx" lang="en-US">(.*)<\/div>/sU', $content, $matches)) $ret["source"] = trim(strip_tags($matches[1]));
         if (preg_match('/<p class="pst">Hint<\/p><div class="ptx" lang="en-US">(.*)<\/div><p class="pst">Source/sU', $content, $matches)) $ret["hint"] = trim($matches[1]);
         if (strpos($content, '<td style="font-weight:bold; color:red;">Special Judge</td>') !== false) $ret["special_judge_status"] = 1;

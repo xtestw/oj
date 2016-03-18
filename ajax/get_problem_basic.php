@@ -1,4 +1,5 @@
 <?php
+include_once(dirname(__FILE__)."/../functions/users.php");
 include_once(dirname(__FILE__)."/../functions/problems.php");
 $vname=convert_str($_GET['vname']);
 $vid=convert_str($_GET['vid']);
@@ -13,7 +14,7 @@ else {
     $ret["title"]=problem_get_title($ret["pid"]);
     if ($ret["pid"]&&$ret["title"]) $ret["code"]=0;
 }
-if ($ret["code"]==0&&problem_hidden($ret["pid"])) {
+if ($ret["code"]==0&&problem_hidden($ret["pid"])&& !($current_user->is_root())) {
     unset($ret);
     $ret["code"]=1;
 }

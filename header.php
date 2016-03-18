@@ -7,7 +7,6 @@ include_once("functions/users.php");
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="CQU Online Judge, A simple, full-featured Online Judge." />
     <meta name="keywords" content="Online Judge, CQU, OJ, CQUOJ, BOJ, Virtual Judge, Replay Contest, Problem Category" />
-    <meta name="author" content="51isoft">
     <link rel="shortcut icon" href="ico/cquoj.ico" />
     <title><?= $pagetitle==""?"CQU Online Judge":$pagetitle ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

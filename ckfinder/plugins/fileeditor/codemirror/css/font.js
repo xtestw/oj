@@ -9,7 +9,7 @@ setTimeout(function() {
   var link = document.createElement("LINK");
   link.type = "text/css";
   link.rel = "stylesheet";
-  link.href = "http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans:bold";
+  link.href = "http://acm.cqu.edu.cn/css/css.css";
   document.documentElement.getElementsByTagName("HEAD")[0].appendChild(link);
   waitForStyles();
 }, 20);
