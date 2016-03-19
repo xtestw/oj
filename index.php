@@ -6,7 +6,7 @@ include_once("functions/contests.php");
         <div class="row-fluid">
         <div class="main-left">
         <div class="hero">
-          <h2><b>Welcome to Chongqing University OJ 1.0</b></h2>
+          <h2><b>Welcome to Chongqing University OJ 1.1</b></h2>
           <p>
       Be Developed and Maintained By CQU ACM-ICPC Team!<br/>
       Enjoy and have fun!
