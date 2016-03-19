@@ -6,7 +6,7 @@ include_once("functions/contests.php");
         <div class="row-fluid">
         <div class="main-left">
         <div class="hero">
-          <h2><b>Welcome to Chongqing University OJ 1.1</b></h2>
+          <h1><b>Welcome to CQU OJ 1.1</b></h1>
           <p>
       Be Developed and Maintained By CQU ACM-ICPC Team!<br/>
       Enjoy and have fun!
@@ -51,15 +51,26 @@ $running_vcontest=contest_get_virtual_running_list();
 if (sizeof($running_vcontest)>0) {
 ?>
             <h3>Running Virtual Contests</h3>
-            <p>
+             <table class='table table-hover table-striped table-condensed'>
+              <thead>
+                    <tr style="font-size:20px;">
+                        <th width='60%'>Exercises</th>
+                        <th width='40%'>End time</th>
+                    </tr>
+              </thead>
+              <tbody>
 <?php
   foreach ($running_vcontest as $contest) {
 ?>
-              <a href='contest_show.php?cid=<?=$contest["cid"]?>'><?=$contest["title"]?></a> ends at <?=$contest["end_time"]?><br />
+                <tr class='vjttip'>
+                        <td><a href='contest_show.php?cid=<?=$contest["cid"]?>'><?=$contest["title"]?></a></td>
+                        <td><?=$contest["end_time"]?></td>
+                </tr>
 <?php
   }
 ?>
-            </p>
+              </tbody>
+            </table>
 <?php
 }
 ?>
