@@ -19,11 +19,10 @@ include_once("functions/contests.php");
 $running_contest=contest_get_standard_running_list();
 if (sizeof($running_contest)>0) {
 ?>
-            <h3>Running Contests</h3>
             <table class='table table-hover table-striped table-condensed'>
               <thead>
                     <tr style="font-size:20px;">
-                        <th width='60%'>Exercises</th>
+                        <th width='60%'>Running Contests</th>
                         <th width='40%'>End time</th>
                     </tr>
               </thead>
@@ -50,11 +49,10 @@ if (sizeof($running_contest)>0) {
 $running_vcontest=contest_get_virtual_running_list();
 if (sizeof($running_vcontest)>0) {
 ?>
-            <h3>Running Virtual Contests</h3>
              <table class='table table-hover table-striped table-condensed'>
               <thead>
                     <tr style="font-size:20px;">
-                        <th width='60%'>Exercises</th>
+                        <th width='60%'>Running Virtual Contests<</th>
                         <th width='40%'>End time</th>
                     </tr>
               </thead>
@@ -81,11 +79,10 @@ if (sizeof($running_vcontest)>0) {
 $scheduled_contest=contest_get_standard_scheduled_list();
 if (sizeof($scheduled_contest)>0) {
 ?>
-            <h3>Upcoming Contests</h3>
             <table class='table table-hover table-striped table-condensed'>
               <thead>
                     <tr style="font-size:20px;">
-                        <th width='60%'>Exercises</th>
+                        <th width='60%'>Upcoming Contests<</th>
                         <th width='40%'>Start time</th>
                     </tr>
               </thead>
@@ -112,11 +109,10 @@ if (sizeof($scheduled_contest)>0) {
 $scheduled_vcontest=contest_get_virtual_scheduled_list();
 if (sizeof($scheduled_vcontest)>0) {
 ?>
-            <h3>Upcoming Virtual Contests</h3>
             <table class='table table-hover table-striped table-condensed'>
               <thead>
                     <tr style="font-size:20px;">
-                        <th width='60%'>Exercises</th>
+                        <th width='60%'>Upcoming Virtual Contests</th>
                         <th width='40%'>Start time</th>
                     </tr>
               </thead>
