@@ -4,10 +4,10 @@ include_once("functions/sidebars.php");
 include_once("functions/contests.php");
 ?>
         <div class="row-fluid">
-        <div class="main-left">
+        <div class="span9">
         <div class="hero">
           <h1><b>Welcome to CQU OJ 1.1</b></h1>
-          <p>
+          <p style="font-size:26px">
       Be Developed and Maintained By CQU ACM-ICPC Team!<br/>
       Enjoy and have fun!
       </p>
@@ -138,7 +138,7 @@ if (sizeof($scheduled_vcontest)>0) {
 ?>
           </div>
    </div>
-    <div class="main-right">
+    <div class="span3">
            <div class="news">
 <?=sidebar_item_content_news(false)?>
           </div>
