@@ -52,7 +52,7 @@ if (sizeof($running_vcontest)>0) {
              <table class='table table-hover table-striped table-condensed'>
               <thead>
                     <tr style="font-size:20px;">
-                        <th width='60%'>Running Virtual Contests<</th>
+                        <th width='60%'>Running Virtual Contests</th>
                         <th width='40%'>End time</th>
                     </tr>
               </thead>
