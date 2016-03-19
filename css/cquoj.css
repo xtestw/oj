@@ -37,7 +37,15 @@ body {
 
 
 #footer {
+    /*position: fixed;
+    bottom: 20px; */
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
     text-align: center;
+    font-size: 1em;
+    clear: both;
+    height: 4em;
 }
 
 @media only screen and (min-width: 1020px) {
@@ -265,4 +273,30 @@ table.cstanding a.cha_click:hover
 /*** contest ***/
 #arrangeform textarea {
   margin-bottom: 3px;
+}
+
+.hero {
+  padding: 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  /*height: 200px;*/
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.main-left {
+  width: 70%;
+  float: left;
+}
+
+.main-right {
+  width: 25%;
+  float: right;
+}
+
+.news {
+  padding-bottom:10px;
+  border-bottom: 1px solid #ccc;
 }
