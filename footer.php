@@ -3,7 +3,7 @@
       <hr>
       <footer id="footer">
         <p>
-          Distributed under GPLv3. |<a href='http://acm.bnu.edu.cn/v3/' target="_blank"> Based On BNUOJ3.0</a> | <a href="https://github.com/xtestw/bnuoj" target="_blank">Project Homepage</a> | Current Style: <b id="stylename"></b>.
+          Distributed under GPLv3. |<a href='http://acm.bnu.edu.cn/v3/' target="_blank"> Based On BNUOJ3.0</a> | <a href="https://github.com/CQU-ACM/CQUOJ-SYSTEM" target="_blank">Project Homepage</a> | Current Style: <b id="stylename"></b>.
         </p>
         <form class="form-inline">
           <label class="select">
