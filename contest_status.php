@@ -9,7 +9,7 @@ $cid=convert_str($_GET['cid']);
           <div>
             <form id="filterform" class="form-inline" method="">
               <b>Filter: </b>
-              <label>Username: <input type='text' name='showname' id="showname" placeholder="Username" class="input-small" value='<?= $current_user->get_username()?>' /></label>
+              <label>Username: <input type='text' name='showname' id="showname" placeholder="Username" class="input-small" value='' /></label>
               <label>ID:
                 <select type='text' name='showpid' id="showpid" class="input-medium">
                   <option value=''>All</option>
