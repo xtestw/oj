@@ -29,8 +29,8 @@ if ( isset( $_GET['iSortCol_0'] ) )
         if ( $_GET[ 'bSortable_'.intval($_GET['iSortCol_'.$i]) ] == "true" )
         {
             if (intval( $_GET['iSortCol_'.$i] )==0) {
-                if (convert_str( $_GET['sSortDir_'.$i] )=="asc") $sOrder .= "local_ac desc, total_ac desc, total_submit, username, ";
-                else $sOrder .= "local_ac, total_ac, total_submit desc, username desc, ";
+                if (convert_str( $_GET['sSortDir_'.$i] )=="asc") $sOrder .= "total_ac desc, local_ac desc, total_submit, username, ";
+                else $sOrder .= "total_ac, local_ac, total_submit desc, username desc, ";
             }
             else $sOrder .= $aColumns[ intval( $_GET['iSortCol_'.$i] ) ]."
                 ".convert_str( $_GET['sSortDir_'.$i] ) .", ";
