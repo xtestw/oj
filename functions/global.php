@@ -64,7 +64,7 @@ function match_shjs($lang) {
             $lang="python3";
             break; 
         case "17":
-            $lang="c++ 11";
+            $lang="C++ 11";
             break;
     }
     return $lang;
@@ -118,6 +118,9 @@ function match_lang($lang) {
             break;
         case "16":
             $lang="Python3";
+            break;
+        case "17":
+            $lang="C++ 11";
             break;
     }
     return $lang;
