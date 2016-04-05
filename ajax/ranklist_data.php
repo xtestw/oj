@@ -118,8 +118,8 @@ $sQuery = "
 foreach ( (array)$db->get_results( $sQuery,ARRAY_A ) as $aRow )
 {
     $row = array();
-    list($rank)=$db->get_row("select count(*)+1 from user where local_ac>".$aRow["local_ac"]." or 
-        (local_ac=".$aRow["local_ac"]." and total_ac>".$aRow["total_ac"].") or 
+    list($rank)=$db->get_row("select count(*)+1 from user where total_ac>".$aRow["total_ac"]." or 
+        (total_ac=".$aRow["total_ac"]." and local_ac>".$aRow["local_ac"].") or 
         (local_ac=".$aRow["local_ac"]." and total_ac=".$aRow["total_ac"]." and total_submit<".$aRow["total_submit"].") or 
         (local_ac=".$aRow["local_ac"]." and total_ac=".$aRow["total_ac"]." and total_submit=".$aRow["total_submit"]." and username<'".$aRow["username"]."' )",ARRAY_N);
     $row[]=$rank;
