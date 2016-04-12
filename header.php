@@ -71,6 +71,8 @@ include_once("functions/users.php");
               <li id="ranklist"><a href="ranklist.php">Ranklist</a></li>
               <li id="discuss"><a href="discuss.php">Discuss</a></li>
                   <li><a href="teaminfo.php">Our Team</a></li>
+                  
+                  <li><a href="http://cqu-acm.github.io/">Team Blogs</a></li>
              <!-- <li class="dropdown" id="more"><a class="dropdown-toggle" data-toggle="dropdown" href="teaminfo.php">More... <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="news.php">News</a></li>
