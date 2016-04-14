@@ -52,13 +52,13 @@ if ($current_user->is_root()) {
                       <label class="radio inline"><input type="radio" name="p_hide" value="0" checked="checked" /> No</label>
                     </td>
                   </tr>
-                  <tr><td>Time Limit</td><td><input type="text" name="time_limit" value="1000" class="input-small" /> ms</td></tr>
-                  <tr><td>Case Time Limit</td><td><input type="text" name="case_time_limit" value="1000" class="input-small" /> ms</td></tr>
+                  <tr><td>Time Limit</td><td><input type="text" name="time_limit" value="2000" class="input-small" /> ms</td></tr>
+                  <tr><td>Case Time Limit</td><td><input type="text" name="case_time_limit" value="2000" class="input-small" /> ms</td></tr>
                   <tr>
                     <td>Only Case Limit?</td>
                     <td>
-                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="1" /> Yes</label>
-                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="0" checked="checked" /> No</label>
+                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="1" checked="checked"/> Yes</label>
+                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="0" /> No</label>
                     </td>
                   </tr>
                   <tr><td>Memory Limit</td><td><input type="text" name="memory_limit" value="65536" class="input-small" /> KB</td></tr>
@@ -376,8 +376,8 @@ if ($current_user->is_root()) {
                 <br />
             </div>
             <div id="othertab" class="tab-pane">
-              <button id="spinfo" class="btn btn-danger syncbutton">Sync Problem Info</button>
-              <button id="suinfo" class="btn btn-danger syncbutton">Sync User Info</button>
+         <!-- <button id="spinfo" class="btn btn-danger syncbutton">Sync Problem Info</button>  -->
+         <!-- <button id="suinfo" class="btn btn-danger syncbutton">Sync User Info</button>     -->
               <div class="alert alert-block" id="syncwait" style="display:none"></div>
               <h4>Delete virtual replays in range</h4>
               <form id='delcontest' method="get" action="ajax/admin_deal_delete_vreplay.php" class="ajform form-inline">
