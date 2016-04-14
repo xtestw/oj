@@ -204,6 +204,13 @@ if ($current_user->is_root()) {
 }
 ?>
     </div>
-<script src="js/end.js?<?=filemtime("js/end.js") ?>"></script>
+      <script src="js/end.js?<?=filemtime("js/end.js") ?>"></script>
+      <script type="text/x-mathjax-config"> 
+             MathJax.Hub.Config({ 
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+      }); 
+      </script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
   </body>
 </html>
