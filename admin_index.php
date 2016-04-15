@@ -48,8 +48,8 @@ if ($current_user->is_root()) {
                   <tr>
                     <td>Hide</td>
                     <td>
-                      <label class="radio inline"><input type="radio" name="p_hide" value="1" /> Yes </label>
-                      <label class="radio inline"><input type="radio" name="p_hide" value="0" checked="checked" /> No</label>
+                      <label class="radio inline"><input type="radio" name="p_hide" value="1" checked="checked"/> Yes </label>
+                      <label class="radio inline"><input type="radio" name="p_hide" value="0"/> No</label>
                     </td>
                   </tr>
                   <tr><td>Time Limit</td><td><input type="text" name="time_limit" value="2000" class="input-small" /> ms</td></tr>
@@ -57,8 +57,8 @@ if ($current_user->is_root()) {
                   <tr>
                     <td>Only Case Limit?</td>
                     <td>
-                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="1" checked="checked"/> Yes</label>
-                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="0" /> No</label>
+                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="1"/> Yes</label>
+                      <label class="radio inline"><input type="radio" name="p_ignore_noc" value="0" checked="checked"/> No</label>
                     </td>
                   </tr>
                   <tr><td>Memory Limit</td><td><input type="text" name="memory_limit" value="65536" class="input-small" /> KB</td></tr>
