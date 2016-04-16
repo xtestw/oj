@@ -210,7 +210,7 @@ if ($current_user->is_root()) {
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
       }); 
       </script>
-      <script type="text/javascript" src="http://acm.cqu.edu.cn/oj/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      <script type="text/javascript" src="http://acm.cqu.edu.cn/oj/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
       </script>
   </body>
 </html>
