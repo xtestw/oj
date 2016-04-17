@@ -205,12 +205,27 @@ if ($current_user->is_root()) {
 ?>
     </div>
       <script src="js/end.js?<?=filemtime("js/end.js") ?>"></script>
+      
+      <!-- enable mathjax  -->
       <script type="text/x-mathjax-config"> 
              MathJax.Hub.Config({ 
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
       }); 
       </script>
       <script type="text/javascript" src="/oj/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+      
+      <!-- force browser to refresh once after loaded  -->
+      <script type="text/javascript">
+      $(document).ready(function(){    
+            //Check if the current URL contains '#'
+            if(document.URL.indexOf("#")==-1){
+                  url = document.URL+"#";
+                  location = "#";
+                  //Reload the page
+                  location.reload(true);
+             }
+      });
       </script>
   </body>
 </html>
