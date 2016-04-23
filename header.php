@@ -72,9 +72,9 @@ include_once("functions/users.php");
               <li id="discuss"><a href="discuss.php">Discuss</a></li>
                   <li><a href="teaminfo.php">Our Team</a></li>
                   
-                  <li><a href="http://cqu-acm.github.io/">Team Blogs</a></li>
+                  <li><a href="http://acm.cqu.edu.cn/blog">Team Blogs</a></li>
                   
-                  <li><a href="http://cqu-acm.github.io/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/">Join Us</a></li>
+                  <li><a href="http://acm.cqu.edu.cn/blog/2016/04/22/2016年重庆大学ACM-ICPC暑假前集训计划及暑假集训队选拔方案/">Join Us</a></li>
                   
              <!-- <li class="dropdown" id="more"><a class="dropdown-toggle" data-toggle="dropdown" href="teaminfo.php">More... <b class="caret"></b></a>
                 <ul class="dropdown-menu">
